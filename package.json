@@ -35,6 +35,8 @@
     "react-native-view-editor": "^1.1.0",
     "react-native-view-shot": "^2.6.0",
     "react-navigation": "^3.11.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
     "rn-fetch-blob": "^0.10.15"
   },
   "devDependencies": {

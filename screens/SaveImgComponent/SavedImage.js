@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   View,
-  Dimensions,
+  Text,
   FlatList,
   TouchableOpacity,
   Image,
@@ -11,6 +11,7 @@ import { Modal } from "react-native";
 
 import Icon from "react-native-vector-icons/MaterialIcons";
 import RNFS from "react-native-fs";
+
 
 import styles from './saveimgStyles';
 
@@ -59,6 +60,7 @@ export default class SavedImage extends React.Component {
       return (
        
           <View>
+             
             <FlatList
               data={this.state.image}
               renderItem={({ item }) => (

@@ -16,7 +16,8 @@ export default StyleSheet.create({
         color: "black",
         justifyContent: "center",
         margin: 10,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginLeft:35
       },
       preview: {
         justifyContent: "center",
@@ -26,8 +27,11 @@ export default StyleSheet.create({
         flex: 1
       },
       icon: {
-        margin: 10,
-        marginLeft: 20
+        // margin: 10,
+        // marginLeft: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign:'center'
       },
       activityIndicator: {
         flex: 1,
@@ -38,7 +42,9 @@ export default StyleSheet.create({
       },
       viewImg:{
         flexDirection: "row", 
-        margin: 10 
+        margin: 10 ,
+     
+
       },
       header:{
         backgroundColor: "#ffffff",
