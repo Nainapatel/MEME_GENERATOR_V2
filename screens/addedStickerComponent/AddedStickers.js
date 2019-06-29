@@ -5,7 +5,7 @@ import styles from "./addedStickerstyles";
 import Config from "../../config";
 import { ScrollView } from "react-native-gesture-handler";
 import Toast from "react-native-simple-toast";
-
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 let config = new Config();
 
 export default class AddedStickers extends React.Component {
@@ -70,7 +70,7 @@ export default class AddedStickers extends React.Component {
       </View>
     );
   }
- /**  @param {*} data: name of category and category wise read directory  */
+  /**  @param {*} data: name of category and category wise read directory  */
   emoji(data) {
     console.log("call emoji", data);
 
@@ -121,11 +121,27 @@ export default class AddedStickers extends React.Component {
         ) : (
           <View>
             <Text>Please Download stickers</Text>
-            <TouchableOpacity 
-              onPress={() => {navigation.navigate('StickerShop'),this.props.close()}}
-            >
-              <Text>Click here</Text>
-            </TouchableOpacity>
+          
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate("StickerShop"), this.props.close();
+                }}
+              >
+               <Text
+                    style={{
+                      justifyContent: "center",
+                      textAlign: "center",
+                      color: "blue",
+                      marginTop:20
+                    }}
+                  >
+                    Click here
+                  </Text>
+                  
+                 
+              
+              </TouchableOpacity>
+           
           </View>
         )}
       </>

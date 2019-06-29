@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet , Platform} from 'react-native';
 
 export default StyleSheet.create({
     container: {
@@ -24,4 +24,20 @@ export default StyleSheet.create({
         height: 80,
         color:"#bc2b78",
       },
+      text1: {
+        fontSize: 21,
+        color: "black",
+        justifyContent: "center",
+        margin: 10,
+        fontWeight: "bold",
+        marginLeft:45
+      },
+      header:{
+        backgroundColor: "#ffffff",
+        height: Platform.OS === "android" ? 55 : 65
+      },
+      title:{
+         flex: 7, 
+         flexDirection: "column" 
+      }
     })

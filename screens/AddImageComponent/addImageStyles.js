@@ -17,7 +17,7 @@ export default StyleSheet.create({
         justifyContent: "center",
         margin: 10,
         fontWeight: "bold",
-        marginLeft:35
+        marginLeft:45
       },
       preview: {
         justifyContent: "center",

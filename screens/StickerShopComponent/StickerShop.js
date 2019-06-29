@@ -7,6 +7,8 @@ import RNFS from "react-native-fs";
 import RNFetchBlob from "rn-fetch-blob";
 let config = new Config();
 import styles from "./stickershopStyles";
+import MenuButton from "../../components/MenuButton";
+import { Header } from "native-base";
 
 export default class StickerShop extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ export default class StickerShop extends React.Component {
       show: false,
       animating: false 
     };
-  }
+  } 
 // in componentDidMount get categoryname and add key alreadyDownloaded or not
   componentDidMount() {
     axios.get(config.getBaseUrl() + "category").then(async res => {
@@ -192,6 +194,12 @@ export default class StickerShop extends React.Component {
     }else{
       return (
         <View>
+           <Header style={styles.header}>
+          <MenuButton navigation={this.props.navigation} />
+          <View style={styles.title}>
+            <Text style={styles.text1}> Sticker Shop </Text>
+          </View>
+        </Header>
           {this.state.categoryName.map(data => (
             <View>
               <TouchableOpacity

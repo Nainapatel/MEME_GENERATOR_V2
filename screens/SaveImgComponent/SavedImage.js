@@ -7,11 +7,11 @@ import {
   Image,
   ActivityIndicator
 } from "react-native";import RNFetchBlob from "rn-fetch-blob";
-import { Modal } from "react-native";
 
-import Icon from "react-native-vector-icons/MaterialIcons";
+import { Header } from "native-base";
+
 import RNFS from "react-native-fs";
-
+import MenuButton from "../../components/MenuButton";
 
 import styles from './saveimgStyles';
 
@@ -24,8 +24,8 @@ export default class SavedImage extends React.Component {
       animating: false
     };
   }
-// in componentWillMount  read device's dir. 
-  componentWillMount = async () => {
+// in componentDidMount  read device's dir. 
+  componentDidMount = async () => {
     let dirs = RNFetchBlob.fs.dirs.PictureDir;
     console.log("--path--", dirs);
     console.log("filepath in get image screen", dirs);
@@ -60,7 +60,12 @@ export default class SavedImage extends React.Component {
       return (
        
           <View>
-             
+             <Header style={styles.header}>
+          <MenuButton navigation={this.props.navigation} />
+          <View style={styles.title}>
+            <Text style={styles.text1}> Sticker Shop </Text>
+          </View>
+        </Header>
             <FlatList
               data={this.state.image}
               renderItem={({ item }) => (

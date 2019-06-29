@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import PropTypes from "prop-types";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import { Container, Header, Content, Card, CardItem, Body } from "native-base";
+
 import Editimg from "../EditimgComponent/Editimg";
 import { Caption } from "../CaptionCompoent/Caption";
 import { captureScreen } from "react-native-view-shot";
@@ -18,7 +18,7 @@ import AwesomeAlert from "react-native-awesome-alerts";
 import ImagePicker from "react-native-image-picker";
 import RBSheet from "react-native-raw-bottom-sheet";
 import AddedStickers from "../addedStickerComponent/AddedStickers";
-import First from "../addedStickerComponent/first";
+
 import styles from "./pictureViewStyles";
 
 class PictureView extends Component {

@@ -21,17 +21,8 @@ export default StyleSheet.create({
       height: 50,
       width: 50
     },
-    // GridViewContainer: {
-    //   flex: 1,
-    //   width: 50,
-    //   height: 50,
-    //   margin: 5,
-    //   borderColor: "#fff",
-    //   borderRadius: 8,
-    //   borderWidth: 0.5
-    // },
+  
     image: {
-      // height:'100%',
       borderRadius: 8,
       borderWidth: 0.5,
       borderColor: "#fff",

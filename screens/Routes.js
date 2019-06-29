@@ -16,25 +16,16 @@ import {
   createAppContainer,
   createMaterialTopTabNavigator
 } from "react-navigation";
-import Second from "./addedStickerComponent/second";
-import First from "./addedStickerComponent/first";
+
 import ShowSavedImg from "./SaveImgComponent/ShowSavedImg";
 
 const MainNavigator = createStackNavigator({
-  // DrawerNavigator: {
-  //   screen: DrawerNavigator,
-  //   navigationOptions: {
-  //     header: null
-  //   }
-  // },
-
-
   DrawerNavigator: {
-		screen: DrawerNavigator,
-		navigationOptions: ({ navigation }) => ({
-			header: <MenuButton navigation={navigation}/>
-		})
-	},
+    screen: DrawerNavigator,
+    navigationOptions: {
+      header: null
+    }
+  },
 
   AddImage: {
     screen: AddImage,

@@ -8,8 +8,7 @@ import {
 } from "react-native";
 import { Header } from "native-base";
 import Picker from "react-native-image-picker";
-import Icon from "react-native-vector-icons/MaterialIcons";
-import Toast from "react-native-simple-toast";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import MenuButton from "../../components/MenuButton";
 const HEIGHT = Dimensions.get("screen").height;
 import styles from "./addImageStyles";
@@ -37,20 +36,19 @@ export default class AddImage extends React.Component {
           <View
             style={{
               flex: 1,
-              flexDirection: "column",
-             
+              flexDirection: "column"
             }}
           >
             <View
               style={{
-                height: HEIGHT / 2,
+                height: HEIGHT/3,
                 justifyContent: "center",
                 alignItems: "center",
                 textAlign: "center"
               }}
             >
               <Icon
-                name="add-a-photo"
+                name="image-plus"
                 color="#606060"
                 size={80}
                 style={styles.icon}
@@ -59,20 +57,19 @@ export default class AddImage extends React.Component {
             </View>
             <View
               style={{
-                height: HEIGHT / 2,
-            
+                height: HEIGHT/3,
                 justifyContent: "center",
                 alignItems: "center",
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
               <Icon
-              name="insert-photo"
-              color="#606060"
-              size={80}
-              style={styles.icon}
-              onPress={() => navigation.navigate("SavedImage")}
-            />
+                name="folder-multiple-image"
+                color="#606060"
+                size={80}
+                style={styles.icon}
+                onPress={() => navigation.navigate("SavedImage")}
+              />
             </View>
           </View>
         </View>

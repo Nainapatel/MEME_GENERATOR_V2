@@ -18,7 +18,7 @@ export default StyleSheet.create({
       },
       GridViewContainer: {
         flex: 1,
-        height: 50,
+        height: 80,
         margin: 5,
     
         backgroundColor: "#ffffff",
@@ -27,8 +27,8 @@ export default StyleSheet.create({
         borderWidth: 0.5
       },
       image: {
-        height: 50,
-        width: 50
+        height: 60,
+        width: 60
       },
       activityIndicator: {
         flex: 1,
