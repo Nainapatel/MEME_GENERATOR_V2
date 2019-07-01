@@ -14,7 +14,7 @@ import Second from "./screens/addedStickerComponent/second";
 import First from "./screens/addedStickerComponent/first";
 import ShowSavedImg from "./screens/SaveImgComponent/ShowSavedImg"
 import DrawerNavigator from './navigation/DrawerNavigator'
-
+import About from './screens/about'
 let {width, height} = Dimensions.get('window');
 
 export default class App extends React.Component {

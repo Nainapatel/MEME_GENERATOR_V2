@@ -5,7 +5,7 @@ import styles from "./addedStickerstyles";
 import Config from "../../config";
 import { ScrollView } from "react-native-gesture-handler";
 import Toast from "react-native-simple-toast";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+
 let config = new Config();
 
 export default class AddedStickers extends React.Component {
@@ -148,3 +148,5 @@ export default class AddedStickers extends React.Component {
     );
   }
 }
+
+

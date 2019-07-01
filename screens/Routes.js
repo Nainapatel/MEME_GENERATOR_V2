@@ -6,7 +6,7 @@ import AddImage from "./AddImageComponent/AddImage";
 import SavedImage from "./SaveImgComponent/SavedImage";
 import ShowStickers from "./ShowStickerComponent/ShowStickers";
 import DrawerNavigator from "../navigation/DrawerNavigator";
-
+import About from "./about"
 import StickerShop from "./StickerShopComponent/StickerShop";
 import AddedStickers from "./addedStickerComponent/AddedStickers";
 import MenuButton from "../components/MenuButton"
@@ -73,6 +73,12 @@ const MainNavigator = createStackNavigator({
   },
   ShowSavedImg: {
     screen: ShowSavedImg,
+    navigationOptions: {
+      header: null
+    }
+  },
+  About: {
+    screen: About,
     navigationOptions: {
       header: null
     }

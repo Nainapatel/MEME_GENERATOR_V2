@@ -5,7 +5,7 @@ import { createDrawerNavigator, createAppContainer } from 'react-navigation';
 import AddImage from '../screens/AddImageComponent/AddImage';
 import StickerShop from '../screens/StickerShopComponent/StickerShop';
 import SavedImage from '../screens/SaveImgComponent/SavedImage'
-
+import About from '../screens/about'
 
 import MenuDrawer from '../components/MenuDrawer';
 
@@ -26,8 +26,12 @@ const DrawerNavigator =  createDrawerNavigator(
 		StickerShop: {
 			screen: StickerShop
 		},
+		
 		SavedImage: {
 			screen: SavedImage
+		},
+		About: {
+			screen: About
 		},
 			
 	},

@@ -75,6 +75,15 @@ class MenuDrawer extends React.Component {
               />
               {this.navLink("SavedImage", "SavedImage")}
             </View>
+
+            <View style={{ flex: 2, flexDirection: "row" }}>
+              <Icon
+                name="folder-multiple-image"
+                size={25}
+                style={{ marginTop: 15, color: "white", marginLeft: 10 }}
+              />
+              {this.navLink("About", "About")}
+            </View>
           </View>
         </ScrollView>
       </View>
