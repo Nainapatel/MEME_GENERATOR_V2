@@ -16,7 +16,7 @@
     "native-base": "^2.12.1",
     "npm": "^6.9.0",
     "react": "16.8.3",
-    "react-native": "0.59.8",
+    "react-native": "0.62.3",
     "react-native-android-keyboard-adjust": "^1.2.0",
     "react-native-awesome-alerts": "^1.2.0",
     "react-native-btr": "^1.1.4",
